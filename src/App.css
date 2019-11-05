@@ -1,0 +1,85 @@
+.App {width: 70%;
+  margin: auto;}
+
+.display{
+  visibility: visible;
+  font-size: medium
+}
+
+.displayNot{
+  visibility: hidden;
+}
+img {
+  width: 300px
+}
+.orderImg {
+  width: 200px
+}
+
+.grid2 {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding-top: 1em
+
+}
+
+.grid3 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  font-size: 20px;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  font-size: 15px;
+}
+
+textarea {
+  resize : none;
+  width: 90%;
+}
+
+.billingInfo {
+  height: 30px;
+}
+
+.billing p {
+  margin:1em 0 0 0
+}
+
+h1 {
+  font-family: serif;
+  padding: 0 0 1em 1em;
+}
+
+h2 {
+  font-family: serif
+}
+
+p {
+  font-family: serif
+}
+
+
+.blinking{
+  animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+  0%{     color:orangered;    }
+  49%{    color: orange; }
+  50%{    color: gold; }
+  99%{    color:orange;  }
+  100%{   color:orangered;    }
+}
+
+
