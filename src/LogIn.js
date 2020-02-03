@@ -68,7 +68,6 @@ const LogIn = (props) => {
                                     <Button style={{marginBottom:'5%'}} color='black' fluid size='large'>
                                         Login
                 </Button>
-                <h6 style={{marginBottom:'5%'}} textDecoration = 'underline'>Forgot your password?</h6> 
                 <Button color='blue' fluid size='large' onClick={()=>props.history.push('/register')}>
                                        Register
                 </Button>

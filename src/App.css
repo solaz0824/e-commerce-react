@@ -1,16 +1,24 @@
 .App {width: 70%;
   margin: auto;}
 
+  
 .display{
   visibility: visible;
-  font-size: medium
+  font-size: medium;
+  margin: auto;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .displayNot{
   visibility: hidden;
 }
 img {
-  width: 300px
+  width: 450px
 }
 .orderImg {
   width: 200px
@@ -18,8 +26,8 @@ img {
 
 .grid2 {
   display: grid;
- grid-template-columns: 1fr 1fr;
- padding-top: 1em
+  grid-template-columns: 1fr 1fr;
+  padding-top: 1em
 
 }
 
@@ -58,16 +66,35 @@ textarea {
 }
 
 h1 {
-  font-family: serif;
+  font-family: 'Mansalva', cursive;
   padding: 0 0 1em 1em;
 }
 
 h2 {
-  font-family: serif
+  font-family: 'Mansalva', cursive;
+}
+
+h3 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h4 {
+  font-family: 'Mansalva', cursive;
+  font-size: 1.5rem;
+}
+h6 {
+  font-family: 'Cutive Mono', monospace;
 }
 
 p {
-  font-family: serif
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20px
+}
+
+
+.mr-auto {
+  font-family: 'Cutive Mono', monospace;;
+  font-size: large;
 }
 
 

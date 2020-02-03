@@ -82,7 +82,7 @@ const EditingProducts = (props) => {
         <div style={styles.formTextarea}>
             <div style={styles.formLabel}>Description : {form.description.substring(0, 10)}</div>
             <textarea style={{ width: '60%', height: '10vh' }}
-                name='description' value="This is a description.">{form.description}</textarea>
+                name='description' value="">{form.description}</textarea>
         </div>
 
         <div style={styles.formRow}>

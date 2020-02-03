@@ -40,7 +40,7 @@ return <div>
             <Form.Input name='email' fluid icon='user' iconPosition='left' placeholder='Email address' onChange={handleChange} required/>
             <Form.Input name='subject' placeholder='subject' onChange={handleChange}/>
             <TextArea name='content' style={{height:'200px', marginBottom:'2%'}} onChange={handleChange} required></TextArea>
-            <Button color='black' fluid size='large'>
+            <Button color='black' fluid size='large' style={{fontFamily: 'Mansalva'}}>
               Submit
             </Button>
           </Segment>

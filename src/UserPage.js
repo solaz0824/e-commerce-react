@@ -23,7 +23,7 @@ const UserPage = (props) => {
           
           
           </Tab.Pane> },
-        { menuItem: 'Order History', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
+       
       ]
       
     const token = JSON.parse(localStorage.getItem('token'))
@@ -60,7 +60,7 @@ const UserPage = (props) => {
  export default UserPage
 
  const userpage = {
-   height: '300px',
+   height: '50%',
    padding: '28px'
  }
 

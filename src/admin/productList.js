@@ -31,7 +31,7 @@ const ProductList = (props) => {
       alignItems: 'center'
     }}>
       <div>
-        {product.onSale ? <p className='display'><span className='blinking'>on sale</span></p> : <p className='displayNot'>on sale</p>}
+        {product.onSale ? <p className='display' style={{margin: '13px'}}><span className='blinking'>on sale</span></p> : <p className='displayNot'>on sale</p>}
         <img src={product.images[0].secure_url} alt="product.category" />
       </div>
       <div><p>{product._id}</p></div>

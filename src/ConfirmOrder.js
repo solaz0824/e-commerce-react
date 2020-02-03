@@ -26,7 +26,6 @@ const ConfirmOrder = (props) => {
     
     console.log(props, 'confirmorder props')
     const order = props.location.state.data
-    //console.log(order)
     return <div style={style}>
      <Step.Group items={steps} />
      <Segment style={{width: '50%', margin:'5% 25%'}}>

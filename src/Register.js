@@ -47,7 +47,7 @@ const Register = (props) => {
     <Grid style={{width:'50%', margin: '5% 25%'}}>
       <Grid.Column >
         <Header color='black' textAlign='center'>
-         <h3>Create your account </h3>
+         <h2>Create your account </h2>
          <h6>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</h6>
         </Header>
         <Form size='large' onSubmit={handleSubmit}
@@ -74,7 +74,7 @@ const Register = (props) => {
               type='password'
               onChange={handleChange}
             />
-            <Button color='black' fluid size='large'>
+            <Button color='black' fluid size='large' style={{fontFamily: 'Mansalva'}}>
               Submit
             </Button>
           </Segment>

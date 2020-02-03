@@ -3,11 +3,11 @@ import { Button, Header, Icon, Modal } from 'semantic-ui-react'
 
 const RemoveModal = (props) => {
   console.log(props)
-  return <Modal  open={props.open} closeIcon>
-    <Header icon='archive' content='Archive Old Messages' />
+  return <Modal  open={props.open} closeIcon style={{height:'200px'}}>
+    <Header icon='archive' content='' />
     <Modal.Content>
       <p>
-        Your inbox is getting full, would you like us to enable automatic archiving of old messages?
+        Do you want to delete this product? 
       </p>
     </Modal.Content>
     <Modal.Actions>

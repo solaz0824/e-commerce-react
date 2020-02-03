@@ -43,7 +43,7 @@ const CreateProduct = (props) => {
         if (images.length === 0) return alert('please insert an image')
         
         const copyOfForm = form
-        if (copyOfForm.category_id || copyOfForm.onSale || copyOfForm.bestSeller === 'no select') return alert('You must select one option!')
+        //if (copyOfForm.category_id || copyOfForm.onSale || copyOfForm.bestSeller === 'no select') return alert('You must select one option!')
         
         copyOfForm.price = Number(copyOfForm.price)
         copyOfForm.stock = Number(copyOfForm.stock)
