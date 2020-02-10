@@ -70,5 +70,6 @@ export default ConfirmOrder
 
 const style = {
     padding: '2em',
-    height: '100%'
+    height: '100%',
+    fontFamily:'Cutive Mono'
 }

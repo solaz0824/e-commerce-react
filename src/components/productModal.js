@@ -3,7 +3,7 @@ import { Button, Header, Icon, Modal } from 'semantic-ui-react'
 
 
 const ModalBasic = (props) => {
-  return  <Modal style={{border:'1px solid white', margin: '10% 25%', width:'50%', height:'200px', }}
+  return  <Modal style={{border:'1px solid white', margin: '10% 25%', marginTop:'10%', width:'50%', height:'200px' }}
                 centered={true}
                 open={props.open} 
                 basic size='small'>

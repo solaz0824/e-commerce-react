@@ -34,7 +34,7 @@ const Home = (props) => {
          })
 
          
-    return <div style={{padding: '28px'}}>
+    return <div style={{padding: '30px 18px'}}>
     <Dropdown text='sort' multiple icon='filter' style={{float:'right', padding:0}} >
     <Dropdown.Menu direction='left' style={{paddingRight:'1em'}}>
       <Dropdown.Menu scrolling>
@@ -50,7 +50,7 @@ const Home = (props) => {
                 {
                  props.categoryTitle === 'All Products'
                   ? <div>
-                  <h2 style={{margin: '10% 0 0 '}}>Best Seller</h2>
+                  <h2 style={{margin: '8% 0 0 '}}>Best Seller</h2>
                   <div className='grid3'>{renderBestsellers}</div>
                   </div>
                  : null  

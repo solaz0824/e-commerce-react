@@ -1,17 +1,12 @@
-import React from 'react'
+import React from 'react';
 import Axios from 'axios';
-import {url} from './config.js'
-import getCart from './helper/getCart.js'
+import {url} from './config.js';
+import getCart from './helper/getCart.js';
 
-// import stripe checkout first
 import StripeCheckout from 'react-stripe-checkout';
 
 
-// that's your publishable key obtained form strip, for testing use testing key
 const STRIPE_PUBLISHABLE = 'pk_test_0BDH13KlH5DPRTbJ4hMvPMXA00Cjqy8pli';
-
-
-
 
 const CURRENCY = 'EUR';
 

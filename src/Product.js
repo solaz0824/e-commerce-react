@@ -85,7 +85,11 @@ const detailStyles = {
 }
 const detailGridStyles = {
     display: 'grid',
-    gridTemplateRows: '1fr 1fr 1fr'
+    gridTemplateRows: '1fr 1fr 1fr',
+    alignItems: 'center',
+    textAlign: 'center',
+    width: '50%',
+    padding:'8%'
 }
 
 const imgStyles = {

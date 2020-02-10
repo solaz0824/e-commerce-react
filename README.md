@@ -19,7 +19,7 @@ An E-commerce Website including
 - Node.js
 
 ### Setup
-To run this project, download e-commerce-project-client and e-commerce-project-server from github. 
+To run this project, download `e-commerce-project-client` and `e-commerce-project-server` from github. 
 
 #### Open config.js file in server and fill the form. (your gmail and passwords)   
 

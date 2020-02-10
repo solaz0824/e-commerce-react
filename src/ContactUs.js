@@ -27,7 +27,7 @@ const handleSubmit = async(e) => {
 }
 
 return <div>
-    <Grid style={{width:'50%', margin: '5% 25%'}}>
+    <Grid style={{width:'50%', margin: '2% 25%'}}>
       <Grid.Column >
         <Header color='black' textAlign='center'>
          <h3>Contact us</h3>

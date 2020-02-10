@@ -41,7 +41,7 @@ const LogIn = (props) => {
         <div style={{ padding: '28px', textAlign: 'center', width: '50%' }}><h2>Log In </h2>
             <div className='LogIn' style={LogInStyle}>
                 <div>
-                    <Grid textAlign='center' style={{ height: '40vh', width: '100%'}} verticalAlign='middle'>
+                    <Grid textAlign='center' style={{ width: '100%'}} verticalAlign='middle'>
                         <Grid.Column style={{ maxWidth: 450 }}>
                             <Header color='black' textAlign='center'>
                                 <h2>Log-in to your account</h2>

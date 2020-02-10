@@ -35,7 +35,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column
+    flex-direction: column;
+    margin-bottom: 8%;
 }
 
 .grid3 {
@@ -93,8 +94,12 @@ p {
 
 
 .mr-auto {
-  font-family: 'Cutive Mono', monospace;;
+  font-family: 'Cutive Mono', monospace;
   font-size: large;
+}
+
+li {
+  font-family: 'Cutive Mono',monospace;
 }
 
 
@@ -110,3 +115,20 @@ p {
 }
 
 
+@media screen and (min-width:600px) {
+ .grid3 {  display: grid;
+   grid-template-columns: 1fr;
+   grid-column-gap: 2rem;
+ }
+}
+
+@media screen and (min-width:992px){
+  .grid3 { width: 85vw;
+   grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:1140px) {
+ .grid3 {  grid-template-columns: repeat(3, 1fr)
+ }
+ }

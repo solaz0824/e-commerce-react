@@ -9,10 +9,10 @@ const Footer = () => {
             Subscribe now and get 10% discount</div>
         <div>
             <div>
-                <input type="email" placeholder="Enter email" style={{ width: '20em', height: '3.5vh', fontSize: 'large' }} />
+                <input type="email" placeholder="Your email address" style={{ width: '20em', fontSize: 'large' }} />
             </div>
             <div style={{ textAlign: 'center', margin: '10px' }}>
-                <button style={{ height: '3.5vh', fontFamily: 'Mansalva'}}>submit</button>
+                <button style={{ fontFamily: 'Mansalva'}}>submit</button>
             </div>
         </div>
         <div style={footerText}>
@@ -51,15 +51,15 @@ const footerStyle = {
     flexDirection: 'column',
     backgroundColor: 'black',
     color: 'whitesmoke',
-    height: '50vh',
     alignItems: 'center',
     fontFamily: 'Mansalva'
 }
 
 const footerText = {
-    width: '50%',
+    width: '80%',
     textAlign: 'center',
-    padding: '2em'
+    padding: '2em',
+    fontSize:'large'
 
 }
 
@@ -67,6 +67,8 @@ const footerComponents = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    fontSize:'small',
+    fontWeight: 'bold'
 }
 
 export default Footer
