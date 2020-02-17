@@ -7,7 +7,6 @@ import { Tab } from 'semantic-ui-react'
 
 
 const UserPage = (props) => {
-    console.log(props,'userpage props')
     const [ profile, setProfile ] = useState({
       email: '',
       name:'',
@@ -31,9 +30,7 @@ const UserPage = (props) => {
       const verify_token = async() => {
         try {
           const response = await Axios.post(`${url}/users/verify_token`, {token})
-          console.log(response, '----------------->response')
           const orders = await Axios.get(`${url}/orders/displaybyusers/${response.data.email}`)
-          console.log(orders, 'orders')
           
           return response.data.ok 
         ? setProfile({

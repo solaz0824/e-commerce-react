@@ -22,7 +22,6 @@ const steps = [
 
 
 const Payment = (props) => {
-  console.log(props, '=================payment props')
   return <div style={{ padding: '28px' }} >
     <Step.Group items={steps} />
     <div className='groupingPayment' style={{ margin: '0 30% 0 30%' }}>

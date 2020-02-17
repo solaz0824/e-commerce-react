@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, Header, Icon, Modal } from 'semantic-ui-react'
 
 const RemoveModal = (props) => {
-  console.log(props)
   return <Modal  open={props.open} closeIcon style={{height:'200px'}}>
     <Header icon='archive' content='' />
     <Modal.Content>

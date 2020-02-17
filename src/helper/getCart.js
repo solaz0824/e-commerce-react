@@ -13,7 +13,6 @@ try {
       products.data.products[index].qty = ele.qty
       
      }) 
-     console.log(products.data.products, 'get')
      return products.data.products
 }
 catch(error) {

@@ -24,7 +24,6 @@ const successPayment = async (data) => {
                 total: sendingTotal
                
             })
-            console.log('------------------>',order)
          localStorage.removeItem('cart')   
          history.push({pathname:'/confirmorder',
                        state:  {data: order.data}    
@@ -34,8 +33,6 @@ const successPayment = async (data) => {
         console.log(error, 'error')
     }
     alert('Payment Succesful');
-    // // add async and await
-    // console.log(sendingData);
 };
 
 const errorPayment = data => {

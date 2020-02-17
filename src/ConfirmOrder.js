@@ -24,7 +24,6 @@ const steps = [
   ]
 const ConfirmOrder = (props) => {
     
-    console.log(props, 'confirmorder props')
     const order = props.location.state.data
     return <div style={style}>
      <Step.Group items={steps} />
@@ -37,8 +36,7 @@ const ConfirmOrder = (props) => {
    <div style={{marginBottom:'3em'}}><h3>Thank you! {order.name}</h3>
             <h3> Your order number: {order._id} </h3>
             <h4> Email: {order.email}</h4></div> 
-            {
-                order.cart.map((ele) => {
+            { order.cart.map((ele) => {
                  return <Grid>
                  <Grid.Column width={7}>
                  <img src = {ele.images[0].secure_url} alt={ele.product} className='orderImg'/> 
@@ -51,7 +49,7 @@ const ConfirmOrder = (props) => {
                 </Grid.Column>
                 </Grid>
                 })
-            }
+            };
            
             <h3 style={{textAlign:'end'}}>Total:{order.total}€</h3>
 

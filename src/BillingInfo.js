@@ -23,7 +23,7 @@ const Billing = (props) => {
     const [form, setValues] = useState({
         name: 'mario',
         lastName: 'rossi',
-        email: 'estefanodi2009@gmail.com',
+        email: 'eunyoungk0824@gmail.com',
         city: 'barcelona',
         street: 'una',
         house: '12',
@@ -134,14 +134,11 @@ const formStyle = {
     margin: '0 10%',
     display: 'flex',
     flexDirection: 'column',
-    //backgroundColor: 'yellow'
 }
 
 const flexStyle = {
     display: 'flex',
     flexDirection: 'row',
-    // marginLeft: '20%',
-    // justifyContent: 'space-between'
 }
 
 const inFlex = {

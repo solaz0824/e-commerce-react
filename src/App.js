@@ -2,7 +2,6 @@ import React , {useEffect, useState} from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import {url} from './config.js'
 
-//========= COMPONENTS ===========
 import Home from './Home'
 import Product from './Product'
 import Header from './components/Header'
@@ -18,14 +17,12 @@ import Sale from './Sale'
 import ContactUs from './ContactUs.js'
 import ConfirmOrder from './ConfirmOrder.js'
 
-//============ADMIN===============
 
 import ProductList from './admin/productList'
-//import UserList from './admin/userList'
 import EditingProducts from './admin/editingProducts.js'
 import CreateProduct from './admin/createProduct.js'
 import OrderList from './admin/orderList.js'
-//=========== STYLES =============
+
 import './App.css'
 import Axios from 'axios';
 
