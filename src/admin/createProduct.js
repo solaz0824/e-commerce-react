@@ -76,8 +76,8 @@ const CreateProduct = (props) => {
 
     const uploadWidget = () => {
         window.cloudinary.openUploadWidget({ 
-        	cloud_name: 'dvswg4sjm', 
-        	upload_preset: 'nj4fhebx', 
+        	cloud_name: 'di8ic7quk', 
+        	upload_preset: 'pgwji7sv', 
 			tags:['user'],
 			stylesheet:widgetStyle
         },

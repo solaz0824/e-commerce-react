@@ -1,9 +1,10 @@
 import React from 'react';
 import Axios from 'axios';
-import {url} from './config.js';
+import { url } from './config.js';
 import getCart from './helper/getCart.js';
 
 import StripeCheckout from 'react-stripe-checkout';
+
 
 
 const STRIPE_PUBLISHABLE = 'pk_test_0BDH13KlH5DPRTbJ4hMvPMXA00Cjqy8pli';
@@ -12,47 +13,51 @@ const CURRENCY = 'EUR';
 
 const fromEuroToCent = amount => amount * 100;
 
-const Checkout = ({ history,name, description, amount, label, billingData }) => {
+const Checkout = ({ history, name, description, amount, label, billingData }) => {
 
-const successPayment = async (data) => {
-    try {
-         await getCart(sendingCart)
-       const order =  await Axios.post(`${url}/orders/create`,
-            {
-                userData: sendingData,
-                cart: await getCart(sendingCart),
-                total: sendingTotal
-               
+    const successPayment = async (data) => {
+       
+        try {
+            await getCart(sendingCart)
+            const order = await Axios.post(`${url}/orders/create`,
+                {
+                    userData: sendingData,
+                    cart: await getCart(sendingCart),
+                    total: sendingTotal
+
+                })
+
+            history.push({
+                pathname: '/confirmorder',
+                state: { data: order.data }
             })
-         localStorage.removeItem('cart')   
-         history.push({pathname:'/confirmorder',
-                       state:  {data: order.data}    
-                        })   
-    }
-    catch (error) {
-        console.log(error, 'error')
-    }
-    alert('Payment Succesful');
-};
 
-const errorPayment = data => {
-    alert('Payment Error');
-};
+            localStorage.removeItem('cart')
+        }
+        catch (error) {
+            console.log(error, 'error')
+        }
+        alert('Payment Successful');
+    };
 
-const onToken = (amount, description, billingData) => token =>
-    Axios.post(`${url}/payment`,
-        {
-            description,
-            source: token.id,
-            currency: CURRENCY,
-            amount: fromEuroToCent(amount)
-        })
-        .then(successPayment)
-        .catch(errorPayment);
+    const errorPayment = data => {
+        alert('Payment Error');
+    };
 
-var sendingData
-var sendingTotal
-var sendingCart
+    const onToken = (amount, description, billingData) => token =>
+        Axios.post(`${url}/payment`,
+            {
+                description,
+                source: token.id,
+                currency: CURRENCY,
+                amount: fromEuroToCent(amount)
+            })
+            .then(successPayment)
+            .catch(errorPayment);
+
+    var sendingData
+    var sendingTotal
+    var sendingCart
 
 
     sendingData = billingData

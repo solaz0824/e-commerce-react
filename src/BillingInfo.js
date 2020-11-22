@@ -8,7 +8,7 @@ const steps = [
         icon: 'edit',
         active: true,
         title: 'Billing',
-        description: 'Fill your billing infomation',
+        description: 'Fill your billing information',
     },
     {
         key: 'Payment',
@@ -61,7 +61,7 @@ const Billing = (props) => {
 
         <form className='billing' onSubmit={handleSubmit} style={formStyle}>
 
-            <h1 style={{ padding: 0 }}>Billing infomation</h1>
+            <h1 style={{ padding: 0 }}>Billing information</h1>
             <div style={flexStyle}>
                 <div style={inFlex}>
             <div style={flexStyle}>

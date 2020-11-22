@@ -7,7 +7,7 @@ const steps = [
       key: 'Billing',
       icon: 'edit',
       title: 'Billing',
-      description: 'Fill your billing infomation',
+      description: 'Fill your billing information',
     },
     {
       key: 'Payment',
@@ -23,8 +23,8 @@ const steps = [
     }
   ]
 const ConfirmOrder = (props) => {
-    
     const order = props.location.state.data
+    console.log(props)
     return <div style={style}>
      <Step.Group items={steps} />
      <Segment style={{width: '50%', margin:'5% 25%'}}>
@@ -36,7 +36,7 @@ const ConfirmOrder = (props) => {
    <div style={{marginBottom:'3em'}}><h3>Thank you! {order.name}</h3>
             <h3> Your order number: {order._id} </h3>
             <h4> Email: {order.email}</h4></div> 
-            { order.cart.map((ele) => {
+            { order.cart && order.cart.map((ele) => {
                  return <Grid>
                  <Grid.Column width={7}>
                  <img src = {ele.images[0].secure_url} alt={ele.product} className='orderImg'/> 

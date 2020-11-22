@@ -21,8 +21,7 @@ const Product = (props) => {
         })
             : cart[index].qty = qty + cart[index].qty
         localStorage.setItem('cart', JSON.stringify(cart))
-
-
+        
     }
     const handleClose = () => {
         setModal(false)

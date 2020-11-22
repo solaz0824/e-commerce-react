@@ -8,7 +8,7 @@ const steps = [
     icon: 'edit',
     active: true,
     title: 'Billing',
-    description: 'Fill your billing infomation',
+    description: 'Fill your billing information',
   },
   {
     key: 'Payment',
